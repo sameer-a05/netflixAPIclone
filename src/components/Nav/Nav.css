@@ -1,0 +1,102 @@
+#landing {
+    flex: 0.85;
+    overflow: hidden; 
+    margin-left: 200px;
+}
+
+.movie__background--wrapper{
+    height: 400px;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 60px 50px 0 rgb(5, 5, 5, 0.5);
+}
+
+.movie__background--image{
+    filter: opacity(30%);
+}
+
+.movie__background--text{
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding: 0 16px;
+    z-index: 2;
+}
+
+.movie__background--title{
+    font-size: 60px;
+    font-weight: 200;
+    margin-top: 80px;
+    margin-bottom: 12px;
+}
+
+.movie__background--para{
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.movie__background--button {
+    background-color: crimson;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie__background--button::before {
+    content: "\f002"; 
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    color: white;
+    font-size: 20px;
+}
+
+
+.movie__input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: white;
+    padding: 24px 30px;
+    font-size: 20px;
+    outline: none;
+}
+
+
+.movie__input:focus,
+.movie__input:active {
+    outline: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+.movie__input--wrapper:focus-within {
+    box-shadow: 0 0 10px crimson;
+    transition: box-shadow 300ms ease;
+}
+
+
+.movie__input--wrapper {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    padding: 4px;
+    max-width: 600px;
+    width: 100%;
+    border: 2px solid white;
+}
