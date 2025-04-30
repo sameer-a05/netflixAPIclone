@@ -8,6 +8,94 @@
   width: 100%;
 }
 
+.moviepage {
+  align-items: start;
+}
+
+.moviepage__movies {
+  align-items: center;
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+}
+
+.moviepage__center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.moviepage__img--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.moviepage__img--wrapper > img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+}
+
+.moviepage__img--wrapper > h1 {
+  font-size: 24px;
+  font-weight: 300;
+  color: white;
+}
+
+.moviepage__search {
+  align-items: center;
+  background-color: crimson;
+  display: flex;
+  height: 100px;
+  padding: 4px 4px 4px 24px;
+  width: 100%;
+}
+
+.moviepage__search--input {
+  flex: 1 1;
+}
+
+.moviepage__search input::placeholder {
+  color: white;
+  opacity: 0.9;
+  font-weight: 280;
+}
+
+.moviepage__search--input > input {
+  background-color: initial;
+  border: none;
+  color: white !important;
+  font-size: 40px;
+  height: 80px;
+  width: 100%;
+  padding-left: 210px;
+}
+
+.moviepage__search--button {
+  flex: 0.15 1;
+}
+
+.moviepage__search--button > button {
+  background-color: initial;
+  border: 3px solid #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 40px !important;
+  height: 80px;
+  outline: none;
+  width: 100%;
+}
+
+.moviepage__search--button > button i {
+  color: white;
+}
+
 .movie__list {
   margin-left: 220px;
   width: calc(100% - 220px);

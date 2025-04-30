@@ -6,9 +6,11 @@ import axios from "axios";
 import Movie from "../../components/Movie/Movie";
 import { useStateValue } from "../../StateProvider";
 import { actionTypes } from "../../reducer";
+import { useNavigate } from "react-router-dom";
 
 const Moviespage = () => {
   const [{ searchTerm }, dispatch] = useStateValue();
+  const navigate = useNavigate();
   const [search, setSearch] = useState("");
   const [searchMade, setSearchMade] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -44,6 +46,7 @@ const Moviespage = () => {
       type: actionTypes.SET_SEARCH_TERM,
       searchTerm: search,
     });
+    navigate("/movies");
   }
 
   return (
@@ -67,10 +70,12 @@ const Moviespage = () => {
         </form>
 
         {loading === false && searchMade === false && (
-          <figure className="moviepage__img--wrapper">
-            <img src={SearchImg} alt="Search Placeholder" />
-            <h1>Waiting for your Search...</h1>
-          </figure>
+          <div className="moviepage__center">
+            <figure className="moviepage__img--wrapper">
+              <img src={SearchImg} alt="Search Placeholder" />
+              <h1>Waiting for your Search...</h1>
+            </figure>
+          </div>
         )}
 
         {loading === true && (

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Sidebar from "../../components/Sidebar/Sidebar";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 import "../../components/Movie/Movie.css";
 import Poster1 from "../../assets/postertest.jpg";
@@ -104,23 +104,25 @@ const MovieInfopage = () => {
                     <h3 className="movie__info--title">
                       Guardians of the Galaxy Vol 2
                     </h3>
-                    <a href="/movies/tt3896198">
+                    <Link to="/movies/tt3896198">
                       <button className="movie__button">Find Out More</button>
-                    </a>
+                    </Link>
                   </div>
                 </figure>
               </div>
+
               <div className="movie">
                 <figure className="movie__img--wrapper">
                   <img src={Poster2} alt="Avengers" className="movie__img" />
                   <div className="movie__overlay">
                     <h3 className="movie__info--title">Avengers</h3>
-                    <a href="/movies/tt0848228">
+                    <Link to="/movies/tt0848228">
                       <button className="movie__button">Find Out More</button>
-                    </a>
+                    </Link>
                   </div>
                 </figure>
               </div>
+
               <div className="movie">
                 <figure className="movie__img--wrapper">
                   <img
@@ -132,12 +134,13 @@ const MovieInfopage = () => {
                     <h3 className="movie__info--title">
                       Spider-Man: Homecoming
                     </h3>
-                    <a href="/movies/tt2250912">
+                    <Link to="/movies/tt2250912">
                       <button className="movie__button">Find Out More</button>
-                    </a>
+                    </Link>
                   </div>
                 </figure>
               </div>
+
               <div className="movie">
                 <figure className="movie__img--wrapper">
                   <img
@@ -147,12 +150,13 @@ const MovieInfopage = () => {
                   />
                   <div className="movie__overlay">
                     <h3 className="movie__info--title">Minions: Rise of Gru</h3>
-                    <a href="/movies/tt5113044">
+                    <Link to="/movies/tt5113044">
                       <button className="movie__button">Find Out More</button>
-                    </a>
+                    </Link>
                   </div>
                 </figure>
               </div>
+
               <div className="movie">
                 <figure className="movie__img--wrapper">
                   <img
@@ -164,20 +168,21 @@ const MovieInfopage = () => {
                     <h3 className="movie__info--title">
                       Spider-Man: Into the Spider-Verse
                     </h3>
-                    <a href="/movies/tt4633694">
+                    <Link to="/movies/tt4633694">
                       <button className="movie__button">Find Out More</button>
-                    </a>
+                    </Link>
                   </div>
                 </figure>
               </div>
+
               <div className="movie">
                 <figure className="movie__img--wrapper">
                   <img src={Poster6} alt="Nope" className="movie__img" />
                   <div className="movie__overlay">
                     <h3 className="movie__info--title">Nope</h3>
-                    <a href="/movies/tt10954984">
+                    <Link to="/movies/tt10954984">
                       <button className="movie__button">Find Out More</button>
-                    </a>
+                    </Link>
                   </div>
                 </figure>
               </div>
